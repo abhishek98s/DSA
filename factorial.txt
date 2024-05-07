@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int factorial(int num){
+    if(num == 1){
+        return 1;
+    }else{
+        return num * factorial(num - 1);
+    }
+}
+
+int main() {
+    int a = factorial(3);
+    printf("%d", a);
+    return 0;
+}

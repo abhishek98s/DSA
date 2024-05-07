@@ -1,0 +1,29 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int arr[] = {4, 3, 2, 1, 5};
+int arr_size = 5;
+
+int main() {
+    int i, j;
+    int smIndex;
+    
+    for(i = 0; i < arr_size-1; i++){
+        smIndex = i;
+        for(j = i+1; j < arr_size-1; j++){
+            
+            if(arr[j] < arr[smIndex] ){
+                smIndex = j;     
+            }
+        }
+        
+        int temp = arr[i];
+        arr[i] = arr[smIndex];
+        arr[smIndex] = temp;
+    }
+    
+    for (i = 0; i < arr_size; ++i) {
+        printf("%d  ", arr[i]);
+    }
+    return 0;
+}

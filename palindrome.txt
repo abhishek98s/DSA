@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+
+void isPalindrome(int num){
+    int i;
+    int cnum = num;
+    int size = sizeof(cnum);
+    int result = 0;
+    
+    for(i = 0; i < size; i++){
+        result = result * 10 + (cnum % 10);
+        cnum /= 10; 
+    }
+    
+    if(num == result){
+        printf("The number is palindrome");
+    }else{
+        printf("The number is not palindrome");
+    } 
+}
+
+int main() {
+    isPalindrome(34123);
+    
+    return 0;
+}
