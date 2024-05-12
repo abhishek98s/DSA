@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+      
+      <br>
+      <br>
+      
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <br>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <label for="interests">Interests:</label>
+      <input type="checkbox" id="interest1" name="interests" value="interest1">
+      <label for="interest1">Interest 1</label>
+      <input type="checkbox" id="interest2" name="interests" value="interest2">
+      <label for="interest2">Interest 2</label>
+      <input type="checkbox" id="interest3" name="interests" value="interest3">
+      <label for="interest3">Interest 3</label>
+
+      <br>
+      <br>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+          <option value="country3">Nepal</option>
+        <option value="country1">Japan</option>
+        <option value="country2">USA</option>
+      </select>
+
+      <input type="submit" value="Register" class="btn">
+    </form>
+  </div>
+</body>
+</html>
