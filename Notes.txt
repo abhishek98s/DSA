@@ -1,0 +1,75 @@
+o- Hash collision method
+- chaining (add a linked list)
+- open addressing (find next empty indices place)
+
+
+o- Internal and external sort
+# Internal sort
+- more memory
+- less scalable
+- more speed
+- simple in nature
+- suitable for small to medium datasets
+
+# internal sort
+- more memory
+- less scalable
+- more speed
+- simple in nature
+- suitable for large datasets
+
+
+o- Dynamic algorithm
+- break down problem into small parts
+- divide and conqure
+- bottom up approach, solve the sub problem then the main problem
+- example: dibonaci, shortest path problem
+- always optimal soluition
+- complex
+
+
+o- Greedy algorithm
+- used for clear optimal structure
+- top down approach
+- example: huffman
+- may not always be optimal soluition
+- not complex
+
+
+o- Heapsort
+- build the BST of the array
+- build the max-heap of the BST
+- Then the larget element is at the top
+- swap the top with the last element and consider the last element sorted
+- then in the remaining heapify to change the tree to max-heap
+- then repeat it unit all the element is considered sorted
+
+
+o- Huffman algorithm
+- we count the number of time the words is repeated
+- put it in sorted order
+- now we make tree
+- take two min and sum it and make it the parent of the two min
+- now take another then put it in the sorted if the element is greater then the previous sum in right else left
+- now also sum it and make the value the parent 
+- do it until the elements are not finished
+- now to the left assign 0 to left side assign 1
+- make table of letter, number of repetitive,  assign code, and in last ,multiply the repetitive character number x digits nun
+- then add the three things(8*no of character, total repetitive, total last column)
+- now we get the (total byte/ 8) which is less than the previous hence compressing
+
+
+o- RAM Model
+- used to analyze the time and complexity of algorithm 
+- helps to evaluate the performance without worring aboutthe intricates of hardware and software
+
+
+o- Expression tree
+- generally used to improve the performance in the compilers, database query and represent complex logical and mathematical relationships
+- helps in complex expression
+
+
+o- Big o, theta, omega
+- Big O (upper)
+- Big theta (exact)
+- Big omega (lower)
